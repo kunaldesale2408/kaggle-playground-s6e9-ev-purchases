@@ -125,7 +125,9 @@ assert submission[target_col].min() >= 0.0 and submission[target_col].max() <= 1
 
 print("All integrity checks passed successfully!")
 
-sub_path = BASE_DIR / "submission.csv"
+submissions_dir = BASE_DIR / "submissions"
+submissions_dir.mkdir(parents=True, exist_ok=True)
+sub_path = submissions_dir / "submission.csv"
 submission.to_csv(sub_path, index=False)
 print(f"Saved final submission to {sub_path}")
 

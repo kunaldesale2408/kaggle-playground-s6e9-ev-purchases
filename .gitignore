@@ -15,15 +15,12 @@ ENV/
 env.bak/
 venv.bak/
 
-# Competition datasets (large files)
+# Competition raw datasets (downloadable from Kaggle)
 train.csv
 test.csv
 sample_submission.csv
 
-# Generated large submission files
-submission*.csv
-
-# Model training outputs and logs
+# Model training cache and logs
 catboost_info/
 *.tmp
 *.log
